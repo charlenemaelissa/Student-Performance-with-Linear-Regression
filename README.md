@@ -10,7 +10,7 @@ tools yanga digunakan dalam pengerjaan tools ini:
 
 # Eksplorasi data
 Sebelum melakukan prediksi, pertama tama perlu dilakukan pengecekan noise. Namun, karena data ini sudah bersih maka lanjut ke langkah selanjutnya yaitu eksplorasi data, saya menggunakan heatmap korelasi untuk melihat korelasi kuat dan lemah sesama fitur.
-![Eksplorasi data](images/heatmap_korelasi.png) 
+![Eksplorasi data](heatmap_korelasi.png) 
 berdasarkan heatmap, variabel yang paling berpengaruh
 terhadap performance index adalah previous scores dengan korelasi sangat
 kuat sebesar 0.92, diikuti oleh Hours Studied dengan korelasi sedang
@@ -20,7 +20,7 @@ performance index, masing masing hanya 0.05 dan 0.04, menunjukkan
 pengaruhnya hampir tidak signifikan terhadap performa.
 
 # Model Coeficient
-![Model Koefisien](images/modelkoef.png)
+![Model Koefisien](modelkoef.png)
 Hours Studied: 2.8532
 Previous Scores: 1.0191
 Sleep Hours: 0.4716
@@ -43,7 +43,7 @@ Nilai Train MSE 4.27dan Test MSE 4.13 menunjukkan bahwa rata rata kesalahan pred
 Ada 15 kombinasi fitur yang diuji, masing-masing- kombinasi itu sudah dihitung nilai MSE dan R squared nya. Dengan jumlah yang sama semua berarti tidak ada kombinasi fitur yang terlewat atau gagal hitung.
 
 # Evaluasi Model
-![evaluasi model](images/Evaluasimodel.png)
+![evaluasi model](Evaluasimodel.png)
 Berdasarkan tabel hasil evaluasi model regresi linier pada kombinasi prediktor yang berbeda, terlihat bahwa kombinasi variabel Kours Studied, Previous Scores, Sleep Hours, Sample Questions Papers Practiced menghasilkan performa terbaik dengan nilai MSE terkecil sebesar 4.13 dan nilai R squared tertinggi sebesar 0.988. Ini menunjukkan bahwa kombinasi keempat variabel tersebut mampu menjelaskan sekitar 98.8% variasi data target, menjadikannya model paling akurat dibandingkan kombinasi lainnya.
 
 # Melakukan prediksi
